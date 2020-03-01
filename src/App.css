@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
   text-align: center;
+  background: rgb(202, 233, 229);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 44px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  color: rgb(152, 152, 194)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todos {
+  text-transform: capitalize;
+  font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  margin: 15px;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myButton {
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 0px 26px #283966;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.container {
+  text-align: center;
+  border: 1px solid #476e9e;
+  height: 100%;
+}
+
+.delete  {
+	border-radius:5px;
+	cursor:pointer;
+	padding: 5px 20px 5px 20px;
+	margin-left: 20px;
+}
+
+.delete:hover  {
+	color: red;
+}
+
+#welcome {
+	font-size: 24px;
+	margin-bottom: 50px;
+	border: 1px solid blue;
+	padding: 20px;
+	background: #476e9e;
 }
